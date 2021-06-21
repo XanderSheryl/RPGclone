@@ -15,18 +15,19 @@ bool Game::Start()
 {
     player = 'X';
     pos = { 10, 10 };
+    config_json = std::make_unique<JsonParser>("data/config/config.json");
     return true;
 }
 
 bool Game::Update()
 {
-    if (GetKeyPressed(alexio::W) || GetKeyPressed(alexio::UP))
+    if (config_json->GetKeyPressed("Up"))
         pos.y--;
-    if (GetKeyPressed(alexio::S) || GetKeyPressed(alexio::DOWN))
+    if (config_json->GetKeyPressed("Down"))
         pos.y++;
-    if (GetKeyPressed(alexio::A) || GetKeyPressed(alexio::LEFT))
+    if (config_json->GetKeyPressed("Left"))
         pos.x--;
-    if (GetKeyPressed(alexio::D) || GetKeyPressed(alexio::RIGHT))
+    if (config_json->GetKeyPressed("Right"))
         pos.x++;
 
     Clear();
