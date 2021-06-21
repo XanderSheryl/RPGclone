@@ -1,7 +1,0 @@
-﻿cl : command line warning D9025: overriding '/std:c++17' with '/std:c++latest'
-  Game.cpp
-D:\Projects\C++\RPGclone\src\AlexioConsoleEngine.h(166,41): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  main.cpp
-D:\Projects\C++\RPGclone\src\AlexioConsoleEngine.h(166,41): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Generating Code...
-  RPGclone.vcxproj -> D:\Projects\C++\RPGclone\build\bin\Debug\Win32\RPGclone.exe
